@@ -8,8 +8,8 @@
 body {
     font-family: 'Arial', sans-serif; /* Keep the font as it is */
     background-image: url('image.jpeg'); /* Set the custom background image (image.jpeg) */
-    background-size: cover;  /* Make sure it covers the whole screen */
-    background-position: center;  /* Center the image */
+    background-size: cover; /* Make sure it covers the whole screen */
+    background-position: center; /* Center the image */
     color: #fff; /* Adjust text color to white */
     display: flex;
     justify-content: center;
@@ -42,9 +42,9 @@ body {
     width: 50px; /* Size of the icon */
     height: 50px;
     cursor: pointer;
-    position: fixed;  /* Fixed position so it stays in place */
-    bottom: 230px;  /* 163px - 37.8px (1 cm) = 125px from the bottom */
-    left: 50%;  /* Center horizontally */
+    position: fixed; /* Fixed position so it stays in place */
+    bottom: 20%; /* Adjusted for responsiveness */
+    left: 50%; /* Center horizontally */
     margin-left: -25px; /* Adjust the position to truly center the icon */
     z-index: 1000; /* Ensure it's on top of other elements */
     transition: transform 0.2s ease-in-out; /* Smooth transition for hover */
@@ -52,4 +52,43 @@ body {
 
 .icon:hover {
     transform: scale(1.05); /* Slightly enlarge the icon on hover */
+}
+
+/* Media Query for screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    #quote {
+        font-size: 1.2rem; /* Slightly smaller font size for quotes */
+        margin-bottom: 15px;
+    }
+
+    .container {
+        padding: 20px; /* Reduce padding */
+        width: 90%; /* Make the container slightly wider */
+    }
+
+    .icon {
+        width: 40px; /* Smaller icon size for smaller screens */
+        height: 40px;
+        bottom: 15%; /* Adjust the position for smaller screens */
+        margin-left: -20px; /* Center icon properly */
+    }
+}
+
+/* Media Query for screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+    #quote {
+        font-size: 1rem; /* Smaller font size for very small screens */
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Adjust shadow for readability */
+    }
+
+    .icon {
+        width: 35px; /* Further reduce icon size */
+        height: 35px;
+        bottom: 10%; /* Adjust position */
+        margin-left: -17.5px; /* Center icon properly */
+    }
+
+    .container {
+        padding: 15px; /* Reduce padding further */
+    }
 }
