@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif; /* Keep the font as it is */
-    background-image: url('images/image.jpeg'); /* Set the custom background image (image.jpeg) */
+    background-image: url('image.jpeg'); /* Set the custom background image (image.jpeg) */
     background-size: cover;  /* Make sure it covers the whole screen */
     background-position: center;  /* Center the image */
     color: #fff; /* Adjust text color to white */
