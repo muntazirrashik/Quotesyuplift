@@ -1,0 +1,55 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Keep the font as it is */
+    background-image: url('images/image.jpeg'); /* Set the custom background image (image.jpeg) */
+    background-size: cover;  /* Make sure it covers the whole screen */
+    background-position: center;  /* Center the image */
+    color: #fff; /* Adjust text color to white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    /* Removed the white background and box-shadow to make it transparent */
+}
+
+.quote-container {
+    margin-bottom: 20px;
+}
+
+#quote {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9); /* Increased shadow for more contrast */
+}
+
+.icon {
+    width: 50px; /* Size of the icon */
+    height: 50px;
+    cursor: pointer;
+    position: fixed;  /* Fixed position so it stays in place */
+    bottom: 230px;  /* 163px - 37.8px (1 cm) = 125px from the bottom */
+    left: 50%;  /* Center horizontally */
+    margin-left: -25px; /* Adjust the position to truly center the icon */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    transition: transform 0.2s ease-in-out; /* Smooth transition for hover */
+}
+
+.icon:hover {
+    transform: scale(1.05); /* Slightly enlarge the icon on hover */
+}
